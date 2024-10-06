@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background: #F8F9FA;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+h1 {
+    color: #3b5998;
+    font-size: 3rem; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.heading-black {
+    color: #000;
+}
+
+.firstpara {
+    color: #475569;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.5rem; 
+}
+
+.btn-login {
+    background: #3b5998;
+    color: white;
+    padding: 15px 30px; 
+    border-radius: 5px;
+    font-size: 20px; 
+    margin-right: 10px;
+    cursor: pointer;
+    border: none; 
+}
+
+.btn-light {
+    font-weight: 500;
+    color: #3b5998;
+    padding: 15px 30px; 
+    font-size: 20px; 
+    cursor: pointer;
+    border: none; 
+}
+
+.btn-login:hover {
+    background-color: #153d93;
+    color: white;
+}
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.mobile {
+    position: absolute;
+    top: -10%;
+    left: -25%;
+    z-index: 1;
+    width: 60%;
+}
+
+.desktopfirst {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    padding: 30px; 
+    margin: 20px;
+    
+    max-width: 100%; 
+    box-sizing: border-box; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background: white; 
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-text {
+    color: #475569;
+    margin-bottom: 20px; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+.text-primary {
+    color: #3b5998;
+}
+
+.container{
+    padding: 80px;
+    margin-top: 50px;
+}
+
+/* Media Queries */
+
+
+@media (min-width: 3840px) {
+    .card {
+        width: 100%; 
+        margin: 1%;
+    }
+    
+    h1 {
+        font-size: 4rem; 
+    }
+
+    .firstpara {
+        font-size: 2rem; 
+    }
+}
+
+
+@media (min-width: 1600px) and (max-width: 3839px) {
+    .card {
+        width: 100%; 
+        
+        margin: 1.5%;
+    }
+    .card-text {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .card {
+        width: 100%; 
+        margin: 10px;
+    }
+    .card-text {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card {
+        margin: 10px;
+    }
+    .card-text {
+        font-size: 0.85rem;
+    }
+    .container{
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card {
+        margin: 10px;
+    }
+    .card-text {
+        font-size: 0.85rem;
+    }
+    .container{
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.8rem; 
+    }
+
+    .firstpara {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .btn-login, .btn-light {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .card h5 {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        word-wrap: break-word; 
+        overflow-wrap: break-word; 
+    }
+
+    .d-flex {
+        gap: 8px;
+    }
+    .container{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .firstpara {
+        font-size: 0.9rem;
+    }
+
+    .card h5 {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.78rem;
+    }
+
+    .d-flex {
+        gap: 4px;
+    }
+    .container{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 475px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .card{
+        width: 96%;
+    }
+
+    .firstpara {
+        font-size: 0.9rem;
+    }
+
+    .card h5 {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.78rem;
+    }
+
+    .d-flex {
+        gap: 4px;
+    }
+    .container{
+        padding: 10px;
+    }
+}
